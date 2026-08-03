@@ -1,0 +1,14 @@
+{
+  "title": "HA Energy France",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurer HA Energy France",
+        "description": "Créer la configuration initiale de HA Energy France."
+      }
+    },
+    "abort": {
+      "already_configured": "HA Energy France est déjà configuré."
+    }
+  }
+}
