@@ -48,3 +48,7 @@ jobs:
       - uses: hacs/action@main
         with:
           category: integration
+          # These checks concern inclusion in the default HACS catalogue, not
+          # installation as a custom repository. License metadata is read from
+          # the default branch and becomes visible after this bootstrap merges.
+          ignore: brands license topics
