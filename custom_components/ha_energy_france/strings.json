@@ -3,12 +3,22 @@
   "config": {
     "step": {
       "user": {
-        "title": "Configurer HA Energy France",
-        "description": "Créer la configuration initiale de HA Energy France."
+        "title": "Set up HA Energy France",
+        "description": "Create the HA Energy France integration. No external service is contacted during setup."
       }
     },
     "abort": {
-      "already_configured": "HA Energy France est déjà configuré."
+      "already_configured": "HA Energy France is already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "Integration status",
+        "state": {
+          "ready": "Ready"
+        }
+      }
     }
   }
 }
