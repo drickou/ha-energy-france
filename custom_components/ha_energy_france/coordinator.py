@@ -23,9 +23,7 @@ class HAEnergyFranceData:
     last_updated: datetime
 
 
-class HAEnergyFranceDataUpdateCoordinator(
-    DataUpdateCoordinator[HAEnergyFranceData]
-):
+class HAEnergyFranceDataUpdateCoordinator(DataUpdateCoordinator[HAEnergyFranceData]):
     """Coordinate HA Energy France data updates."""
 
     config_entry: ConfigEntry
