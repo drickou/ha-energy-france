@@ -86,6 +86,15 @@ The runtime is intentionally provider-independent. A future Enedis implementatio
 should supply data through the existing coordinator contract instead of coupling
 API calls directly to entities.
 
+## Project documentation
+
+- [Vision](VISION.md) — mission, users, product principles, privacy, and long-term direction.
+- [Roadmap](ROADMAP.md) — delivery phases, deliverables, and acceptance criteria.
+- [Architecture](ARCHITECTURE.md) — provider-independent layers and Home Assistant lifecycle.
+- [Specifications](SPECIFICATIONS.md) — first functional release data and entity contracts.
+- [UI guidelines](UI_GUIDELINES.md) — recommended dashboards and data-quality states.
+- [Contributing](CONTRIBUTING.md) — development workflow, tests, and pull request policy.
+
 ## Support
 
 Report problems through the
