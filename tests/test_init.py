@@ -35,7 +35,9 @@ async def test_setup_and_unload_entry(hass) -> None:
         f"{entry.entry_id}_status",
     )
     assert entity_id is not None
-    assert hass.states[entity_id].state == "ready"
+    state = hass.states.get(entity_id)
+    assert state is not None
+    assert state.state == "ready"
 
     assert await hass.config_entries.async_unload(entry.entry_id)
     await hass.async_block_till_done()

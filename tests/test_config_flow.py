@@ -37,4 +37,4 @@ async def test_duplicate_entry_aborts(hass) -> None:
     )
 
     assert result["type"] is FlowResultType.ABORT
-    assert result["reason"] == "already_configured"
+    assert result["reason"] == "single_instance_allowed"
