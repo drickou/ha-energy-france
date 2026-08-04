@@ -10,11 +10,11 @@ class EnedisAuthService(Protocol):
 
     async def authenticate(self) -> bool:
         """Authenticate with Enedis."""
-        ...
+        ...  # pragma: no cover
 
     async def close(self) -> None:
         """Close authentication resources."""
-        ...
+        ...  # pragma: no cover
 
 
 class MockEnedisAuthService:
