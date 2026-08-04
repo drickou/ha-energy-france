@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ha-energy-france"
+version = "0.2.0"
+description = "Home Assistant custom integration for French energy data"
+readme = "README.md"
+requires-python = ">=3.13.2"
+license = "MIT"
+authors = [{ name = "Cédric Halley" }]
+
+[project.optional-dependencies]
+test = [
+  "pytest-homeassistant-custom-component==0.13.305",
+  "ruff>=0.12.0",
+]
+
+[tool.setuptools]
+packages = []
+
+[tool.pytest.ini_options]
+addopts = "--strict-markers --strict-config --cov=custom_components.ha_energy_france --cov-report=term-missing"
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+fail_under = 100
+show_missing = true
+
+[tool.ruff]
+target-version = "py313"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["ASYNC", "B", "E", "F", "I", "ICN", "ISC", "PIE", "PYI", "RUF", "UP", "W"]
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+known-first-party = ["custom_components.ha_energy_france"]

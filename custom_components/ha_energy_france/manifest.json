@@ -1,13 +1,13 @@
 {
   "domain": "ha_energy_france",
   "name": "HA Energy France",
-  "codeowners": [
-    "@drickou"
-  ],
+  "codeowners": ["@drickou"],
   "config_flow": true,
   "documentation": "https://github.com/drickou/ha-energy-france",
   "integration_type": "service",
-  "iot_class": "cloud_polling",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/drickou/ha-energy-france/issues",
   "requirements": [],
-  "version": "0.1.0"
+  "single_config_entry": true,
+  "version": "0.2.0"
 }

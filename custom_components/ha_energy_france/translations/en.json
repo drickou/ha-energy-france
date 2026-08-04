@@ -1,3 +1,35 @@
 {
-  "title": "HA Energy France"
+  "title": "HA Energy France",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up HA Energy France",
+        "description": "Choose the energy data provider to configure.",
+        "data": {
+          "provider": "Provider"
+        }
+      },
+      "enedis": {
+        "title": "Configure Enedis",
+        "description": "Configure the Enedis authentication workflow. Authentication is simulated for now.",
+        "data": {
+          "pdl": "PDL (optional)",
+          "authentication_method": "Authentication method"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "HA Energy France is already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "Integration status",
+        "state": {
+          "ready": "Ready"
+        }
+      }
+    }
+  }
 }

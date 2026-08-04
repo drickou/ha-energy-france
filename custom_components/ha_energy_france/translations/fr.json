@@ -4,11 +4,32 @@
     "step": {
       "user": {
         "title": "Configurer HA Energy France",
-        "description": "Créer la configuration initiale de HA Energy France."
+        "description": "Choisissez le fournisseur de données énergétiques à configurer.",
+        "data": {
+          "provider": "Fournisseur"
+        }
+      },
+      "enedis": {
+        "title": "Configurer Enedis",
+        "description": "Configurez le parcours d'authentification Enedis. L'authentification est simulée pour le moment.",
+        "data": {
+          "pdl": "PDL (facultatif)",
+          "authentication_method": "Méthode d'authentification"
+        }
       }
     },
     "abort": {
       "already_configured": "HA Energy France est déjà configuré."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "État de l'intégration",
+        "state": {
+          "ready": "Prête"
+        }
+      }
     }
   }
 }
