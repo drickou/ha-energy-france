@@ -4,7 +4,18 @@
     "step": {
       "user": {
         "title": "Set up HA Energy France",
-        "description": "Create the HA Energy France integration. No external service is contacted during setup."
+        "description": "Choose the energy data provider to configure.",
+        "data": {
+          "provider": "Provider"
+        }
+      },
+      "enedis": {
+        "title": "Configure Enedis",
+        "description": "Configure the Enedis authentication workflow. Authentication is simulated for now.",
+        "data": {
+          "pdl": "PDL (optional)",
+          "authentication_method": "Authentication method"
+        }
       }
     },
     "abort": {
