@@ -4,7 +4,18 @@
     "step": {
       "user": {
         "title": "Configurer HA Energy France",
-        "description": "Créez l'intégration HA Energy France. Aucun service externe n'est contacté pendant la configuration."
+        "description": "Choisissez le fournisseur de données énergétiques à configurer.",
+        "data": {
+          "provider": "Fournisseur"
+        }
+      },
+      "enedis": {
+        "title": "Configurer Enedis",
+        "description": "Configurez le parcours d'authentification Enedis. L'authentification est simulée pour le moment.",
+        "data": {
+          "pdl": "PDL (facultatif)",
+          "authentication_method": "Méthode d'authentification"
+        }
       }
     },
     "abort": {
